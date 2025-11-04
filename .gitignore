@@ -497,3 +497,16 @@ API/obj/Debug/net9.0/ref/API.dll
 API/obj/Debug/net9.0/refint/API.dll
 API/obj/Debug/net9.0/apphost.exe
 API/obj/project.nuget.cache
+API/bin/
+obj/
+API/obj/Debug/net9.0/API.AssemblyInfo.cs
+API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+API/bin/Debug/net9.0/API.exe
+API/bin/Debug/net9.0/API.dll
+API/obj/Debug/net9.0/API.pdb
+API/obj/Debug/net9.0/apphost.exe
+API/obj/Debug/net9.0/API.AssemblyInfo.cs
+API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+API/bin/Debug/net9.0/API.pdb
+API/obj/Debug/net9.0/ref/API.dll
+API/obj/Debug/net9.0/API.pdb
