@@ -485,3 +485,15 @@ $RECYCLE.BIN/
 
 # End
 .vscode/
+API/obj/
+API/dating.db
+API/bin/
+API/obj/Debug/
+API/obj/Debug/net9.0/
+API/obj/Debug/net9.0/ref/API.dll
+API/dating.db-shm
+API/obj/Debug/net9.0/apphost.exe
+API/obj/Debug/net9.0/ref/API.dll
+API/obj/Debug/net9.0/refint/API.dll
+API/obj/Debug/net9.0/apphost.exe
+API/obj/project.nuget.cache
