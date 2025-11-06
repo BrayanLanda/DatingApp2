@@ -520,3 +520,5 @@ obj/Debug/net9.0/
 obj/Debug/net9.0/ref/
 obj/
 API/dating.db-wal
+API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+API/obj/Debug/net9.0/API.AssemblyInfo.cs
