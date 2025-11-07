@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { LoginCreds, RegisterCreds, User } from '../../types/user';
 import { tap } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { tap } from 'rxjs';
 })
 export class AccountService {
   private http = inject(HttpClient);
-  currentUser: any = null;
+  currentUser = signal<User | null>(null);
 
   baseUrl = 'https://localhost:5001/api/';
 
