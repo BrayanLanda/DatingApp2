@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { Home } from './features/home/home';
-import { authGuardGuard } from './core/guards/auth-guard-guard';
+import { authGuard } from './core/guards/auth-guard-guard';
 import { MemberList } from './features/members/member-list/member-list';
 import { MemberDetailed } from './features/members/member-detailed/member-detailed';
 import { Lists } from './features/lists/lists/lists';
@@ -11,7 +11,7 @@ export const routes: Routes = [
     {
         path: '',
         runGuardsAndResolvers: 'always',
-        canActivate: [authGuardGuard],
+        canActivate: [authGuard],
         children: [
             { path: 'members', component: MemberList },
             { path: 'member/:id', component: MemberDetailed },

@@ -13,13 +13,13 @@ import { ToastService } from '../../core/services/toast-service';
 export class Nav {
   protected accountService = inject(AccountService);
   private router = inject(Router);
- private toast = inject(ToastService);
+  private toast = inject(ToastService);
   protected creds: any = {};
-  
-  login(){
+
+  login() {
     this.accountService.login(this.creds).subscribe({
-      next: result => {
-       this.router.navigateByUrl('/members');
+      next: () => {
+        this.router.navigateByUrl('/members');
         this.toast.success('Logged in successfully');
         this.creds = {};
       },
@@ -29,7 +29,8 @@ export class Nav {
     });
   }
 
-  logout(){
+  logout() {
+    this.accountService.logut();
     this.router.navigateByUrl('/');
   }
 }
