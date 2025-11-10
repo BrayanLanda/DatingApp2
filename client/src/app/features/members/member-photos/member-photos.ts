@@ -3,10 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Photo } from '../../../types/member';
 import { MemberService } from '../../../core/services/member-service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-member-photos',
-  imports: [],
+  imports: [AsyncPipe],
   templateUrl: './member-photos.html',
   styleUrl: './member-photos.css',
 })
@@ -22,7 +23,7 @@ export class MemberPhotos {
     }
   }
 
-  get photoMock(){
+  get photoMocks(){
     return Array.from({length: 20}, (_, i) => ({
       url: '/user.png'
     }));

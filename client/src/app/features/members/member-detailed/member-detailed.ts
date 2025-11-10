@@ -27,7 +27,6 @@ export class MemberDetailed implements OnInit {
       next: () => {
         this.title.set(this.route.firstChild?.snapshot?.title);
       }
-    }
-    )
+    });
   }
 }
