@@ -21,12 +21,12 @@ public class MemberRepository(AppDbContext context) : IMemberRepositoty
         return await context.Members.ToListAsync();
     }
 
-    public async Task<Member> GetMemberByIdAsync(string id)
+    public async Task<Member?> GetMemberByIdAsync(string id)
     {
         return await context.Members.FindAsync(id);
     }
 
-    public async Task<Member> GetMemberForUpdate(string id)
+    public async Task<Member?> GetMemberForUpdate(string id)
     {
         return await context.Members
             .Include(x => x.User)

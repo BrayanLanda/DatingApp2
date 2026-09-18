@@ -41,13 +41,13 @@ export class MemberProfile implements OnInit, OnDestroy {
   }
 
   updateProfile() {
-    if(!this.memberService.member()) return;
+    if (!this.memberService.member()) return;
 
-    const updatedMember = {...this.memberService.member(), ...this.editableMember};
+    const updatedMember = { ...this.memberService.member(), ...this.editableMember };
     this.memberService.updateMember(this.editableMember).subscribe({
       next: () => {
         const currentUser = this.accountService.currentUser();
-        if(currentUser && updatedMember.displayName !== currentUser.displayName) {
+        if (currentUser && updatedMember.displayName !== currentUser.displayName) {
           currentUser.displayName = updatedMember.displayName;
           this.accountService.setCurrentUser(currentUser);
         }
